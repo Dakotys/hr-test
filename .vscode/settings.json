@@ -1,0 +1,16 @@
+{
+  "emmet.includeLanguages": {
+    "javascriptreact": "html",
+    "typescriptreact": "html"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx",
+    "typescript": "tsx",
+    "jsx": {
+      "attr_quotes": "single"
+    },
+    "tsx": {
+      "attr_quotes": "single"
+    }
+  }
+}
