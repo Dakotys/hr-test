@@ -1,9 +1,6 @@
-import { createSignal, onMount } from "solid-js";
-
 import imageSend from "../assets/send.svg";
 
 function Footer(props) {
-	console.log(props.menus);
 	return (
 		<div class="footer">
 			<a href="/" class="logo">

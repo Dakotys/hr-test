@@ -1,7 +1,4 @@
-import { createSignal, onMount } from "solid-js";
-
 function Footer(props) {
-	console.log(props);
 	return (
 		<div class="copy-and-social">
 			<div class="info">

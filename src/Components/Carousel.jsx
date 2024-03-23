@@ -10,7 +10,6 @@ function Carousel(props) {
 	let gap;
 
 	onMount(() => {
-		console.log(wrapperRef.scrollWidth);
 		cardWidth = Number.parseInt(
 			getComputedStyle(wrapperRef).getPropertyValue("--width").slice(0, -2),
 		);
