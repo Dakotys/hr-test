@@ -8,11 +8,11 @@
 .nav-actions{
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: .6vw;
 
   a{
     background-color: unset;
-    padding: 4px 6px;
+    padding: 6px clamp(4px, .8vw, 8px);
     color: var(--sc);
     font-size: 1.8rem;
     text-decoration: none;
@@ -20,6 +20,10 @@
     img{
       margin: 0 6px;
     }
+  }
+
+  .login{
+    text-wrap: nowrap;
   }
 
   .cart{
