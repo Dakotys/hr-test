@@ -6,7 +6,9 @@ function Cards(props) {
 					<img class="image" src={card.image} alt={card.imageAlt} />
 					<h2 class="title">{card.title}</h2>
 					<p class="description">{card.description}</p>
-					<a href={card.link}>Read more</a>
+					<a class="arrow underline" href={card.link}>
+						Read more
+					</a>
 				</div>
 			))}
 		</div>

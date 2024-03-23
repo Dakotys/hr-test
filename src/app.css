@@ -1,19 +1,70 @@
 :root{
   --pc: #F43319;
-  --sc: #0065f2;
+  --sc: #0059ff;
   --tc: #f2f8ff;
+  --qt: #78adf7;
 }
 
-.header-description {
-  color: var(--pc);
+.nav-actions{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  a{
+    background-color: unset;
+    padding: 4px 6px;
+    color: var(--sc);
+    font-size: 1.8rem;
+    text-decoration: none;
+
+    img{
+      margin: 0 6px;
+    }
+  }
+
+  .cart{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #c5dcfc;
+    width: 30px;
+    height: 30px;
+  }
 }
 
-.actions{
+.header-actions{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
   margin: 16px 0;
+
+  .header-description{
+    flex: 10 1 240px;
+    font-size: 1.4rem;
+    color: var(--pc);
+  }
+
+  button{
+    flex: 1 1 80px;
+    padding: 16px 40px;
+    font-size: 1.8rem;
+  }
+
+  a{
+    margin: 0 4px;
+    color: var(--pc);
+    font-weight: bold;
+    text-decoration: none;
+  }
 }
 
 button{
@@ -23,7 +74,7 @@ button{
   background-color: var(--pc);
   padding: 12px 30px;
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.8rem;
   text-align: center;
 
   &:hover{

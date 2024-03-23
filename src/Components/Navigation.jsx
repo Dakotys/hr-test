@@ -1,9 +1,12 @@
 function Navigation(props) {
 	return (
 		<nav class="nav">
-			<a href="/" class="logo">
-				{props.logo}
-			</a>
+			<div class="left">
+				<a href="/" class="logo">
+					{props.logo}
+				</a>
+				<span class="mobile hamburger">☰</span>
+			</div>
 			<ul class="menu">
 				{props.menu.map((item) => (
 					<li>
@@ -11,14 +14,7 @@ function Navigation(props) {
 					</li>
 				))}
 			</ul>
-			<div class="buttons">
-				<button type="button" class="login">
-					Profile
-				</button>
-				<button type="button" class="signup">
-					Cart
-				</button>
-			</div>
+			{props.actions && props.actions}
 		</nav>
 	);
 }

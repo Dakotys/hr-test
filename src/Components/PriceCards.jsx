@@ -16,9 +16,14 @@ function PriceCards(props) {
 							<li class="feature">{feature}</li>
 						))}
 					</ul>
-					<button type="button">Action</button>
+					<button type="button" onClick={() => alert("Click!")}>
+						Action
+					</button>
 					<div class="end">
-						Separated they live in right. <a href={card.link}>Link</a>
+						Separated they live in right.{" "}
+						<a class="arrow underline" href={card.link}>
+							Link
+						</a>
 					</div>
 				</div>
 			))}

@@ -1,5 +1,7 @@
 import { createSignal, onMount } from "solid-js";
 
+import imageLeft from "../assets/left.svg";
+
 function Carousel(props) {
 	const cardRefs = [];
 	let wrapperRef;
@@ -46,9 +48,13 @@ function Carousel(props) {
 	return (
 		<div class="carousel">
 			{/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
-			<div onClick={() => move(1)}>right</div>
+			<div onClick={() => move(1)} class="right">
+				<img style={{ transform: "rotate(180deg)" }} src={imageLeft} alt="" />
+			</div>
 			{/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
-			<div onClick={() => move(-1)}>left</div>
+			<div onClick={() => move(-1)} class="left">
+				<img src={imageLeft} alt="" />
+			</div>
 			<div
 				class="wrapper"
 				ref={wrapperRef}
